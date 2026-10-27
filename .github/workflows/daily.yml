@@ -1,0 +1,75 @@
+# MOVE THIS FILE to .github/workflows/daily.yml before pushing (see SETUP.md step 9).
+# (It ships here because the tool that created the repo isn't allowed to write into .github/.)
+name: Daily email agent
+
+on:
+  schedule:
+    # GitHub cron is always UTC and doesn't know about daylight saving time.
+    # 8 AM Eastern is 12:00 UTC in summer (EDT, UTC-4) but 13:00 UTC in winter
+    # (EST, UTC-5). So we schedule BOTH, and main.py --scheduled only does real
+    # work on the first run at/after 8 AM Eastern each day:
+    #   summer: 12:00 UTC = 8 AM  -> runs | 13:00 UTC = 9 AM -> "already ran", skips
+    #   winter: 12:00 UTC = 7 AM  -> "too early", skips | 13:00 UTC = 8 AM -> runs
+    # Note: GitHub can start scheduled jobs 5-30 min late when it's busy.
+    - cron: "0 12 * * *"
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (print notifications to the log, don't send or save)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # needed to commit data/state.sqlite back
+
+concurrency:
+  group: email-agent   # never run two at once (they'd fight over the database)
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: pytest -q
+
+      - name: Run agent
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python main.py --scheduled
+          elif [ "${{ inputs.dry_run }}" = "true" ]; then
+            python main.py --dry-run
+          else
+            python main.py
+          fi
+
+      - name: Commit state database
+        if: always()
+        run: |
+          git config user.name "email-agent-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.sqlite 2>/dev/null || exit 0
+          if git diff --cached --quiet; then
+            echo "No state changes."
+          else
+            git commit -m "Update agent state [skip ci]"
+            git push
+          fi

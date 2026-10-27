@@ -1,0 +1,857 @@
+[
+  {
+    "id": "interview_confirm_by",
+    "tags": [
+      "interview",
+      "two_dates"
+    ],
+    "notes": "Two dates: the reply deadline (Oct 21) comes first.",
+    "email": {
+      "subject": "Interview invitation \u2013 Software Engineering Intern (Summer 2027)",
+      "sender": "Priya Shah <pshah@brightlinecap.com>",
+      "date": "2026-10-19T10:04:00-04:00",
+      "headers": {},
+      "body": "Hi Joshua,\n\nThank you for completing the technical screen. We'd like to invite you to a virtual\nfinal-round interview on Thursday, October 29 at 2:00 PM ET (three 45-minute sessions).\n\nPlease confirm your availability by replying to this email by Wednesday, October 21.\nIf that time doesn't work, let me know a few alternatives.\n\nBest,\nPriya Shah\nUniversity Recruiting, Brightline Capital"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-21",
+      "urgency": "high",
+      "category": "career"
+    }
+  },
+  {
+    "id": "interview_scheduled_ats",
+    "tags": [
+      "interview",
+      "noreply_ats"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Your interview with Tessera Labs is confirmed",
+      "sender": "Tessera Labs Recruiting <no-reply@greenhouse-mail.example.com>",
+      "date": "2026-10-22T16:30:00-04:00",
+      "headers": {
+        "List-Unsubscribe": "<mailto:unsubscribe@list.example.com>"
+      },
+      "body": "Hi Joshua,\n\nYour interview has been scheduled.\n\nPosition: Backend Engineer Intern\nDate: Tuesday, November 3, 2026\nTime: 11:00 AM \u2013 12:00 PM Eastern\nLocation: Zoom (link below)\n\nhttps://zoom.example.com/j/88812345\n\nNeed to reschedule? Use the link in this email at least 24 hours in advance."
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-11-03",
+      "urgency": "low",
+      "category": "career"
+    }
+  },
+  {
+    "id": "oa_relative_7_days",
+    "tags": [
+      "oa",
+      "relative_date"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Complete your Online Assessment for Northwind Robotics",
+      "sender": "HackerRank <noreply@hackerrank-mail.example.com>",
+      "date": "2026-10-23T09:12:00-04:00",
+      "headers": {
+        "List-Unsubscribe": "<mailto:unsubscribe@list.example.com>"
+      },
+      "body": "Hello Joshua,\n\nNorthwind Robotics has invited you to complete an online coding assessment for the\nSoftware Engineer Intern role.\n\nDuration: 90 minutes\nYou have 7 days from receipt of this email to complete the assessment.\n\nStart assessment: https://hr.example.com/test/abc123\n\nGood luck!"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-30",
+      "urgency": "medium",
+      "category": "career"
+    }
+  },
+  {
+    "id": "oa_expires_date",
+    "tags": [
+      "oa"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Halcyon Systems invited you to take a General Coding Assessment",
+      "sender": "CodeSignal <no-reply@codesignal-mail.example.com>",
+      "date": "2026-10-26T08:15:00-04:00",
+      "headers": {
+        "List-Unsubscribe": "<mailto:unsubscribe@list.example.com>"
+      },
+      "body": "Hi Joshua,\n\nHalcyon Systems would like you to take the General Coding Assessment (GCA).\nThis invitation expires on 11/02/2026 at 11:59 PM PT.\n\nTake the assessment: https://app.example.com/gca/xyz\n\nMake sure you have a stable internet connection and a quiet place."
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-11-02",
+      "urgency": "medium",
+      "category": "career"
+    }
+  },
+  {
+    "id": "onboarding_list_buried",
+    "tags": [
+      "onboarding",
+      "buried_deadline"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Welcome to Ridgeview Aerospace \u2013 pre-start checklist",
+      "sender": "Ridgeview Onboarding <onboarding@ridgeview-aero.example.com>",
+      "date": "2026-10-20T11:00:00-04:00",
+      "headers": {},
+      "body": "Hi Joshua,\n\nWelcome aboard! We're thrilled you'll be joining the Ridgeview Aerospace internship\nprogram in January. Your manager, Dana Kim, will reach out closer to your start date.\n\nHere's what to expect over the next few weeks. Our team will send your laptop about a\nweek before you start, and you'll receive your badge on day one at the Orlando site.\nParking is free in Lot C.\n\nBefore your start date, please complete the following in the onboarding portal:\n  1. Form I-9 Section 1 \u2014 due by October 30.\n  2. Direct deposit setup \u2014 any time before your first paycheck.\n  3. Benefits enrollment \u2014 opens on your start date.\n\nIf you have questions, just reply to this email.\n\nRidgeview People Team"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-30",
+      "urgency": "low",
+      "category": "career"
+    }
+  },
+  {
+    "id": "onboarding_reminder",
+    "tags": [
+      "onboarding",
+      "reminder"
+    ],
+    "notes": "Repeat of onboarding_list_buried; the extractor should still flag it, dedup suppresses it.",
+    "email": {
+      "subject": "Reminder: Form I-9 Section 1 still incomplete",
+      "sender": "Ridgeview Onboarding <onboarding@ridgeview-aero.example.com>",
+      "date": "2026-10-27T09:00:00-04:00",
+      "headers": {},
+      "body": "Hi Joshua,\n\nThis is a friendly reminder that your Form I-9 Section 1 is still incomplete in the\nonboarding portal. It is due in 3 days (October 30). Federal law requires it to be\ncompleted before your start date.\n\nComplete it here: https://portal.example.com/onboarding\n\nThanks,\nRidgeview People Team"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-30",
+      "urgency": "medium",
+      "category": "career"
+    }
+  },
+  {
+    "id": "background_check_72h",
+    "tags": [
+      "background_check",
+      "relative_date"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Ridgeview Aerospace has requested a background check",
+      "sender": "Verifi Screening <noreply@verifi-screening.example.com>",
+      "date": "2026-10-21T13:20:00-04:00",
+      "headers": {
+        "List-Unsubscribe": "<mailto:unsubscribe@list.example.com>"
+      },
+      "body": "Hi Joshua,\n\nRidgeview Aerospace has asked Verifi to run a background check as part of your offer.\nPlease provide your information and consent within 72 hours so there are no delays.\n\nStart here: https://candidate.example.com/invite/7f3a9\n\nThis link is unique to you. Do not share it."
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-24",
+      "urgency": "medium",
+      "category": "career"
+    }
+  },
+  {
+    "id": "background_check_reminder",
+    "tags": [
+      "background_check",
+      "reminder",
+      "relative_date"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Reminder: your background check is waiting",
+      "sender": "Verifi Screening <noreply@verifi-screening.example.com>",
+      "date": "2026-10-23T09:00:00-04:00",
+      "headers": {
+        "List-Unsubscribe": "<mailto:unsubscribe@list.example.com>"
+      },
+      "body": "Hi Joshua,\n\nWe still need your information to start the background check requested by\nRidgeview Aerospace. Your invitation will expire tomorrow.\n\nContinue: https://candidate.example.com/invite/7f3a9"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-24",
+      "urgency": "high",
+      "category": "career"
+    }
+  },
+  {
+    "id": "rejection_plain",
+    "tags": [
+      "rejection"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Update on your application",
+      "sender": "Tessera Labs Careers <careers@tessera-labs.example.com>",
+      "date": "2026-10-21T17:45:00-04:00",
+      "headers": {},
+      "body": "Dear Joshua,\n\nThank you for your interest in the Data Engineering Intern position at Tessera Labs.\nAfter careful review, we have decided to move forward with other candidates whose\nexperience more closely matches our needs at this time.\n\nWe'll keep your resume on file and encourage you to apply to future openings.\n\nBest regards,\nTessera Labs Talent Team"
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "career"
+    }
+  },
+  {
+    "id": "rejection_mentions_past_date",
+    "tags": [
+      "rejection",
+      "past_date"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Your application status \u2013 Quant Developer Intern",
+      "sender": "Brightline Capital <recruiting@brightlinecap.com>",
+      "date": "2026-10-24T12:10:00-04:00",
+      "headers": {},
+      "body": "Hi Joshua,\n\nThank you for taking the time to interview with us on October 14. The team enjoyed\nmeeting you. Unfortunately, we will not be moving forward with your candidacy for the\nQuant Developer Intern role.\n\nWe wish you the best in your search."
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "career"
+    }
+  },
+  {
+    "id": "offer_expires_relative",
+    "tags": [
+      "offer",
+      "relative_date"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Your offer from Halcyon Systems",
+      "sender": "Morgan Reyes <mreyes@halcyon-systems.example.com>",
+      "date": "2026-10-22T15:00:00-04:00",
+      "headers": {},
+      "body": "Hi Joshua,\n\nCongratulations! We're excited to extend you an offer for the Software Engineering\nIntern position for Summer 2027. Please review and sign your offer letter in Workday.\n\nThis offer expires in two weeks. Let me know if you have any questions or want to\ntalk through the details.\n\nMorgan"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-11-05",
+      "urgency": "low",
+      "category": "career"
+    }
+  },
+  {
+    "id": "recruiter_waiting_no_date",
+    "tags": [
+      "reply_waiting"
+    ],
+    "notes": "Someone is waiting on a reply but gave no date.",
+    "email": {
+      "subject": "Great chatting yesterday",
+      "sender": "Marcus Lee <mlee@northwind-robotics.example.com>",
+      "date": "2026-10-23T10:30:00-04:00",
+      "headers": {},
+      "body": "Hi Joshua,\n\nThanks for stopping by our booth at the career fair yesterday! I'd like to set up a\nquick call with our hiring manager. Could you send over your availability for next\nweek and an updated copy of your resume?\n\nThanks,\nMarcus"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": null,
+      "urgency": "low",
+      "category": "career"
+    }
+  },
+  {
+    "id": "utility_bill_due",
+    "tags": [
+      "bill"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Your Orlando Power & Water statement is ready",
+      "sender": "OPW Billing <noreply@opw-billing.example.com>",
+      "date": "2026-10-22T06:00:00-04:00",
+      "headers": {
+        "List-Unsubscribe": "<mailto:unsubscribe@list.example.com>"
+      },
+      "body": "Your statement for account ending in 4471 is ready.\n\nStatement date: October 22, 2026\nAmount due: $84.12\nDue date: November 9, 2026\n\nAutoPay is not enabled on this account. Pay online at https://pay.example.com"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-11-09",
+      "urgency": "low",
+      "category": "bills"
+    }
+  },
+  {
+    "id": "autopay_scheduled",
+    "tags": [
+      "bill",
+      "no_action_needed"
+    ],
+    "notes": "Bill with a date but nothing to do.",
+    "email": {
+      "subject": "Your AutoPay payment is scheduled",
+      "sender": "Lumen Mobile <billing@lumen-mobile.example.com>",
+      "date": "2026-10-25T07:00:00-04:00",
+      "headers": {},
+      "body": "Hi Joshua,\n\nYour AutoPay payment of $45.00 will be drafted from your checking account on\nNovember 1. No action is needed.\n\nThanks for being a Lumen Mobile customer."
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "bills"
+    }
+  },
+  {
+    "id": "credit_card_due_soon",
+    "tags": [
+      "bill"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Payment due soon",
+      "sender": "Summit Card Services <alerts@summitcard.example.com>",
+      "date": "2026-10-26T07:30:00-04:00",
+      "headers": {},
+      "body": "Your minimum payment of $35.00 is due on 10/28/2026.\n\nStatement balance: $412.55\nPay now: https://summitcard.example.com/pay\n\nIf you've already paid, thank you, you can ignore this message."
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-28",
+      "urgency": "high",
+      "category": "bills"
+    }
+  },
+  {
+    "id": "phone_bill_past_due",
+    "tags": [
+      "bill",
+      "past_date",
+      "overdue"
+    ],
+    "notes": "Overdue: deadline is in the past but it still needs action.",
+    "email": {
+      "subject": "Your account is past due",
+      "sender": "Lumen Mobile <billing@lumen-mobile.example.com>",
+      "date": "2026-10-24T08:00:00-04:00",
+      "headers": {},
+      "body": "Hi Joshua,\n\nYour payment of $62.40 was due on October 20 and we haven't received it yet.\nPlease pay now to avoid a late fee and service interruption.\n\nPay: https://lumen-mobile.example.com/pay"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-20",
+      "urgency": "high",
+      "category": "bills"
+    }
+  },
+  {
+    "id": "refund_issued",
+    "tags": [
+      "bill",
+      "no_action_needed"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Refund issued for duplicate charge",
+      "sender": "Summit Card Services <alerts@summitcard.example.com>",
+      "date": "2026-10-23T14:00:00-04:00",
+      "headers": {},
+      "body": "Good news. We've issued a refund of $18.99 for the duplicate charge from\nCAMPUS BOOKSTORE on 10/18. It should appear on your statement within 3-5 business days.\nNo further action is required."
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "bills"
+    }
+  },
+  {
+    "id": "canvas_assignment",
+    "tags": [
+      "class_assignment"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Assignment Due: COP 4331 \u2013 Project Milestone 2",
+      "sender": "Canvas Notifications <notifications@instructure.example.com>",
+      "date": "2026-10-23T12:00:00-04:00",
+      "headers": {},
+      "body": "COP 4331C - Processes for Object-Oriented Software Development\n\nProject Milestone 2 has been posted.\nDue: Nov 2 at 11:59pm\n\nSubmit your group's design document and API spec through Canvas."
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-11-02",
+      "urgency": "low",
+      "category": "school"
+    }
+  },
+  {
+    "id": "prof_by_friday",
+    "tags": [
+      "class_assignment",
+      "relative_date"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "PS6 writeup reminder",
+      "sender": "Dr. Elena Park <epark@ucf.edu>",
+      "date": "2026-10-26T09:40:00-04:00",
+      "headers": {},
+      "body": "Hi all,\n\nQuick reminder that the problem set 6 writeup is due by Friday at 5pm. Late\nsubmissions lose 10% per day. Office hours this week are Wednesday 2-4pm.\n\n- Dr. Park"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-30",
+      "urgency": "medium",
+      "category": "school"
+    }
+  },
+  {
+    "id": "ta_buried_regrade",
+    "tags": [
+      "class_assignment",
+      "buried_deadline",
+      "relative_date"
+    ],
+    "notes": "Deadline buried in paragraph 3; 'Tuesday' from Thu Oct 22 = Oct 27.",
+    "email": {
+      "subject": "Lab 7 notes + a few announcements",
+      "sender": "Kevin Tran (TA) <kevin.tran@ucf.edu>",
+      "date": "2026-10-22T20:15:00-04:00",
+      "headers": {},
+      "body": "Hey everyone,\n\nThanks for a great lab today. A few notes on Lab 7: most groups got the linked-list\nreversal working, but a lot of submissions still leak memory in the delete function.\nRun valgrind before you submit. I've posted a sample solution for Lab 6 under Files.\n\nGrading for Lab 6 is finished. The average was 86 and the most common deduction was\nmissing comments. Please include a header comment with your name and NID.\n\nOh, and one more thing: regrade requests for Exam 2 must be submitted through\nWebcourses by Tuesday, otherwise grades are final.\n\nNext week we'll cover hash tables, so skim chapter 11 if you can. Office hours are\nmoving to Thursday 3-5pm in HEC 308 for the rest of the semester.\n\nKevin"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-27",
+      "urgency": "medium",
+      "category": "school"
+    }
+  },
+  {
+    "id": "grades_posted_fyi",
+    "tags": [
+      "fyi"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Exam 2 grades are posted",
+      "sender": "Canvas Notifications <notifications@instructure.example.com>",
+      "date": "2026-10-21T18:00:00-04:00",
+      "headers": {},
+      "body": "COT 3100 - Introduction to Discrete Structures\n\nGrades for Exam 2 have been posted. Log in to Canvas to view your score and feedback."
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "school"
+    }
+  },
+  {
+    "id": "financial_aid_documents",
+    "tags": [
+      "form"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Verification documents needed",
+      "sender": "UCF Financial Aid <finaid@ucf.edu>",
+      "date": "2026-10-19T10:00:00-04:00",
+      "headers": {},
+      "body": "Dear Joshua,\n\nYour 2027-28 FAFSA has been selected for verification. We need additional documents\nto complete your file. Please upload your signed verification worksheet through myUCF\nby November 15, 2026. Your aid cannot be disbursed until verification is complete.\n\nUCF Office of Student Financial Assistance"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-11-15",
+      "urgency": "low",
+      "category": "school"
+    }
+  },
+  {
+    "id": "registrar_closure_fyi",
+    "tags": [
+      "fyi",
+      "has_date"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Offices closed November 11",
+      "sender": "UCF Registrar <registrar@ucf.edu>",
+      "date": "2026-10-26T11:00:00-04:00",
+      "headers": {},
+      "body": "All Registrar's Office locations will be closed on Wednesday, November 11 in\nobservance of Veterans Day. Online services remain available."
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "school"
+    }
+  },
+  {
+    "id": "dept_newsletter",
+    "tags": [
+      "newsletter",
+      "has_date"
+    ],
+    "notes": "Newsletter that mentions future dates but asks nothing.",
+    "email": {
+      "subject": "CS Department Newsletter \u2013 October",
+      "sender": "UCF Computer Science <cs-news@cs.ucf.edu>",
+      "date": "2026-10-20T08:00:00-04:00",
+      "headers": {
+        "List-Unsubscribe": "<mailto:unsubscribe@list.example.com>"
+      },
+      "body": "In this issue:\n- Faculty spotlight: Dr. Ramirez's lab wins NSF grant\n- Student org highlights: the Robotics Club placed 2nd at regionals\n- Upcoming: guest lecture on quantum computing (Nov 4), Fall hackathon (Nov 14)\n- Alumni news and job board\n\nRead the full newsletter on our website."
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "school"
+    }
+  },
+  {
+    "id": "group_member_waiting",
+    "tags": [
+      "reply_waiting",
+      "relative_date"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "API endpoints?",
+      "sender": "Ana Gomez <ana.gomez.dev@gmail.com>",
+      "date": "2026-10-26T13:05:00-04:00",
+      "headers": {},
+      "body": "Hey Josh,\n\nAre you still able to do the API endpoints for the group project? I need to know by\ntonight so I can plan the frontend this week. Let me know either way!\n\nAna"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-26",
+      "urgency": "high",
+      "category": "school"
+    }
+  },
+  {
+    "id": "thread_already_done",
+    "tags": [
+      "reply",
+      "past_date",
+      "quoted_history"
+    ],
+    "notes": "Old request in the quoted history is already done.",
+    "email": {
+      "subject": "Re: Internship credit form",
+      "sender": "Career Services <careerservices@ucf.edu>",
+      "date": "2026-10-22T09:30:00-04:00",
+      "headers": {},
+      "body": "Hi Joshua,\n\nGot it, thank you! Your internship credit form is complete and has been sent to your\nadvisor. You're all set.\n\nCareer Services\n\nOn Mon, Oct 12, 2026 at 9:00 AM Career Services <careerservices@ucf.edu> wrote:\n> Please submit your internship credit form by October 20 so we can process it."
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "school"
+    }
+  },
+  {
+    "id": "dentist_confirmation",
+    "tags": [
+      "appointment"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Appointment confirmed: Dental cleaning",
+      "sender": "Bright Smiles Dental <appointments@brightsmiles.example.com>",
+      "date": "2026-10-20T15:00:00-04:00",
+      "headers": {},
+      "body": "Hi Joshua,\n\nYour appointment is scheduled for Tuesday, October 27 at 3:30 PM with Dr. Patel.\nAddress: 1200 University Blvd, Suite 4.\n\nReply C to confirm or call us to reschedule."
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-27",
+      "urgency": "medium",
+      "category": "appointments"
+    }
+  },
+  {
+    "id": "health_appt_tomorrow",
+    "tags": [
+      "appointment",
+      "relative_date"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Reminder: your appointment is tomorrow",
+      "sender": "UCF Student Health <noreply@health.ucf.edu>",
+      "date": "2026-10-26T12:00:00-04:00",
+      "headers": {},
+      "body": "This is a reminder of your appointment on Tuesday, October 27 at 10:00 AM at the\nStudent Health Center. Please arrive 10 minutes early and bring your student ID."
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-27",
+      "urgency": "high",
+      "category": "appointments"
+    }
+  },
+  {
+    "id": "service_completed",
+    "tags": [
+      "appointment",
+      "no_action_needed"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Thanks for visiting Precision Auto Care",
+      "sender": "Precision Auto Care <noreply@precisionauto.example.com>",
+      "date": "2026-10-24T16:00:00-04:00",
+      "headers": {
+        "List-Unsubscribe": "<mailto:unsubscribe@list.example.com>"
+      },
+      "body": "Thank you for visiting Precision Auto Care today. Your oil change is complete and your\nnext service is recommended in 5,000 miles. We'd love to hear about your visit!"
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "appointments"
+    }
+  },
+  {
+    "id": "tech_talk_rsvp",
+    "tags": [
+      "event",
+      "two_dates"
+    ],
+    "notes": "RSVP deadline (Nov 2) comes before the event (Nov 5).",
+    "email": {
+      "subject": "ACM Tech Talk with Northwind Robotics \u2013 RSVP",
+      "sender": "UCF ACM <acm@ucf.edu>",
+      "date": "2026-10-21T10:00:00-04:00",
+      "headers": {},
+      "body": "Hi Knights!\n\nJoin us Thursday, November 5 at 6 PM in HEC 101 for a tech talk with engineers from\nNorthwind Robotics, followed by resume reviews. Please RSVP by Monday, November 2 so\nwe can order enough food.\n\nRSVP: https://forms.example.com/acm-nw"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-11-02",
+      "urgency": "low",
+      "category": "events"
+    }
+  },
+  {
+    "id": "calendar_invite_friend",
+    "tags": [
+      "event"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Invitation: Friendsgiving potluck @ Sat Nov 21, 2026 6pm - 10pm (EST)",
+      "sender": "Jordan Blake <jordan.blake.92@gmail.com>",
+      "date": "2026-10-26T19:00:00-04:00",
+      "headers": {},
+      "body": "Jordan Blake has invited you to an event.\n\nFriendsgiving potluck\nWhen: Saturday, November 21, 2026, 6pm \u2013 10pm Eastern Time\nWhere: Jordan's apartment\nBring a dish! Reply Yes / No / Maybe."
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-11-21",
+      "urgency": "low",
+      "category": "events"
+    }
+  },
+  {
+    "id": "club_gbm_this_wednesday",
+    "tags": [
+      "event",
+      "relative_date",
+      "filter_risk"
+    ],
+    "notes": "Mailing-list email with no rescue keyword: the cheap filter may drop it.",
+    "email": {
+      "subject": "GBM this Wednesday!",
+      "sender": "UCF Robotics Club <robotics@knights.example.com>",
+      "date": "2026-10-26T10:00:00-04:00",
+      "headers": {
+        "List-Unsubscribe": "<mailto:unsubscribe@list.example.com>"
+      },
+      "body": "Hey everyone,\n\nOur general body meeting is this Wednesday at 7pm in the Student Union, room 218.\nWe'll announce the competition teams and there will be pizza.\n\nSee you there!"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-28",
+      "urgency": "high",
+      "category": "events"
+    }
+  },
+  {
+    "id": "career_fair_thanks",
+    "tags": [
+      "event",
+      "past_date"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Thanks for attending the Fall Career Expo!",
+      "sender": "UCF Career Services <careerservices@ucf.edu>",
+      "date": "2026-10-22T09:00:00-04:00",
+      "headers": {},
+      "body": "Thanks for attending the Fall Career Expo on October 20! Over 150 employers attended.\nSlides from the employer panel are attached. We hope to see you at the Spring Expo."
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "events"
+    }
+  },
+  {
+    "id": "mom_call_saturday",
+    "tags": [
+      "personal",
+      "relative_date"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "grandma's birthday",
+      "sender": "Mom <estime.family.mom@gmail.com>",
+      "date": "2026-10-21T20:00:00-04:00",
+      "headers": {},
+      "body": "Hi baby, don't forget to call grandma for her birthday this Saturday. She'd love to\nhear from you. Love you!"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-24",
+      "urgency": "medium",
+      "category": "personal"
+    }
+  },
+  {
+    "id": "lease_renewal",
+    "tags": [
+      "form",
+      "relative_date"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Lease renewal decision needed",
+      "sender": "The Pointe Apartments <leasing@thepointe.example.com>",
+      "date": "2026-10-19T12:00:00-04:00",
+      "headers": {},
+      "body": "Hi Joshua,\n\nYour current lease ends on December 31. Please let us know whether you intend to\nrenew by the 31st of this month so we can prepare your paperwork. Renewal rates are\nattached.\n\nThe Pointe Leasing Office"
+    },
+    "expected": {
+      "is_actionable": true,
+      "deadline": "2026-10-31",
+      "urgency": "low",
+      "category": "personal"
+    }
+  },
+  {
+    "id": "security_alert_fyi",
+    "tags": [
+      "fyi",
+      "noreply"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "New sign-in on Mac",
+      "sender": "Accounts <no-reply@accounts.example.com>",
+      "date": "2026-10-25T22:10:00-04:00",
+      "headers": {},
+      "body": "We noticed a new sign-in to your account on a Mac device.\nIf this was you, you don't need to do anything. If not, we'll help you secure your\naccount."
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "other"
+    }
+  },
+  {
+    "id": "tech_newsletter",
+    "tags": [
+      "newsletter"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "The Weekly Byte: AI agents, Rust 2.0 and more",
+      "sender": "The Weekly Byte <newsletter@weeklybyte.example.com>",
+      "date": "2026-10-25T07:00:00-04:00",
+      "headers": {
+        "List-Unsubscribe": "<mailto:unsubscribe@list.example.com>"
+      },
+      "body": "This week's top stories:\n1. Why every startup is building AI agents\n2. Rust 2.0 roadmap announced\n3. 10 VS Code extensions you need\n\nRead more on our site. You're receiving this because you subscribed."
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "other"
+    }
+  },
+  {
+    "id": "receipt_dining",
+    "tags": [
+      "receipt"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Your receipt from Knight Bites",
+      "sender": "Knight Bites <receipts@knightbites.example.com>",
+      "date": "2026-10-24T13:00:00-04:00",
+      "headers": {},
+      "body": "Thanks for your order!\nChicken bowl ........ $11.49\nDrink ............... $2.29\nTotal ............... $13.78\nPaid with Visa ending in 1234."
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "other"
+    }
+  },
+  {
+    "id": "order_confirmation",
+    "tags": [
+      "receipt"
+    ],
+    "notes": "Mentions a future date but needs nothing.",
+    "email": {
+      "subject": "Order #44120 confirmed",
+      "sender": "Gadget Depot <orders@gadgetdepot.example.com>",
+      "date": "2026-10-23T18:00:00-04:00",
+      "headers": {
+        "List-Unsubscribe": "<mailto:unsubscribe@list.example.com>"
+      },
+      "body": "Thanks for shopping with Gadget Depot! Your order #44120 (USB-C hub) has been\nconfirmed and will ship in 1\u20132 business days. Estimated delivery: October 28."
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "other"
+    }
+  },
+  {
+    "id": "package_delivered",
+    "tags": [
+      "receipt"
+    ],
+    "notes": "",
+    "email": {
+      "subject": "Your package was delivered",
+      "sender": "Parcel Express <tracking@parcelexpress.example.com>",
+      "date": "2026-10-26T15:20:00-04:00",
+      "headers": {
+        "List-Unsubscribe": "<mailto:unsubscribe@list.example.com>"
+      },
+      "body": "Your package was delivered at 3:12 PM and left at the front door.\nTracking number: 1Z999AA10123456784"
+    },
+    "expected": {
+      "is_actionable": false,
+      "deadline": null,
+      "urgency": "low",
+      "category": "other"
+    }
+  }
+]

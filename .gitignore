@@ -1,0 +1,28 @@
+# Secrets — never commit
+credentials.json
+token.json
+.env
+*.env
+!.env.example
+client_secret*.json
+
+# Your real emails (eval --real output)
+eval/real_samples/
+
+# Local eval run logs (may contain model output)
+eval/runs/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# state.sqlite IS committed on purpose by GitHub Actions (keep repo private!)
+# Local dry-run/test databases are not:
+data/*.sqlite-journal
+data/test_*.sqlite
